@@ -1,3 +1,4 @@
-﻿  vector_class.cpp
-C:\Users\ranxi\UCDavis\W_workingApplication\programs\VectorDemo\vector_demo\vector_class.cpp(33,10): warning C4018: '>=': signed/unsigned mismatch
+﻿  main.cpp
+  vector_class.cpp
+  Generating Code...
   my_vector.vcxproj -> C:\Users\ranxi\UCDavis\W_workingApplication\programs\VectorDemo\vector_demo\Debug\my_vector.exe

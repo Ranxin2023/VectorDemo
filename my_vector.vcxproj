@@ -144,12 +144,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp" />
-    <ClCompile Include="vector_class.cpp">
-      <AdditionalIncludeDirectories Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\ranxi\UCDavis\W_workingApplication\programs\VectorDemo\vector_demo</AdditionalIncludeDirectories>
-    </ClCompile>
+    <ClCompile Include="src\vector_class.cpp" />
+    <ClCompile Include="src\vector_class2.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vector_class.h" />
+    <ClInclude Include="header\vector_class.h" />
+    <ClInclude Include="vector_class2.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

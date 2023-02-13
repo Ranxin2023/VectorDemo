@@ -3,7 +3,8 @@
 #include <iostream>
 
 
-#include "vector_class.h"
+#include "./header/vector_class.h"
+#include "./header/vector_class2.h"
 //#include "vector_class.cpp"
 
 
