@@ -7,7 +7,9 @@
 #include "./header/vector_class2.h"
 //#include "vector_class.cpp"
 
-
+bool greater(int a, int b){
+    return a > b;
+};
 
 //#include<vector>
 int main()
@@ -30,6 +32,11 @@ int main()
     v2.pop_back();
     v2.print();
     v2.push_back(3);
+    v2.print();
+    v2.sort();
+    v2.print();
+    
+    v2.sort(greater);
     v2.print();
     /*
     Student s("XiaoLi", 10);

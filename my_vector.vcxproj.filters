@@ -26,10 +26,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="vector_class2.h">
+    <ClInclude Include="header\vector_class.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="header\vector_class.h">
+    <ClInclude Include="header\vector_class2.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

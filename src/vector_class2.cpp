@@ -24,7 +24,7 @@ void vector_class2::pop_back() {
 	this->v_size -= 1;
 }
 
-int& vector_class2::operator[](int idx)
+int& vector_class2::operator[](uint32_t idx)
 {
 	if (idx >= this->v_size) {
 		std::cerr << "out of index" << std::endl;
@@ -48,6 +48,35 @@ void vector_class2::print()
 
 }
 
+int* vector_class2::begin()
+{
+	return &this->vector[0];
+}
+
+int vector_class2::back()
+{
+	if (this->v_size==0) {
+		std::cerr << "the vector is empty and doesn't have back" << std::endl;
+		exit(1);
+	}
+	return this->vector[this->v_size-1];
+}
+
+int* vector_class2::end()
+{
+	return &this->vector[this->v_size];
+}
+
 uint32_t vector_class2::size() {
 	return this->v_size;
+}
+
+void vector_class2::sort()
+{
+	std::sort(this->begin(), this->end());
+}
+
+void vector_class2::sort(bool(*func)(int, int))
+{
+	std::sort(this->begin(), this->end(), func);
 }
