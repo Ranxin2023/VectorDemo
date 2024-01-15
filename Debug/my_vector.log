@@ -1,2 +1,5 @@
 ﻿  main.cpp
+  vector_class2.cpp
+C:\Users\ranxi\UCDavis\W_workingApplication\programs\VectorDemo\vector_demo\src\vector_class2.cpp(17,20): warning C4018: '<=': signed/unsigned mismatch
+  Generating Code...
   my_vector.vcxproj -> C:\Users\ranxi\UCDavis\W_workingApplication\programs\VectorDemo\vector_demo\Debug\my_vector.exe

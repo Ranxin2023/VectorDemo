@@ -14,7 +14,7 @@ bool greater(int a, int b){
 //#include<vector>
 int main()
 {
-    std::cout << "Hello World!\n";
+    /*std::cout << "Hello World!\n";
     
     vector_class <char>v(10);
     std::cout << v.size() << std::endl;
@@ -37,6 +37,11 @@ int main()
     v2.print();
     
     v2.sort(greater);
+    v2.print();*/
+    vector_class2 v2;
+    for (int i = 0; i < 2048; i++) {
+        v2.push_back(i);
+    }
     v2.print();
     /*
     Student s("XiaoLi", 10);

@@ -1,20 +1,34 @@
 #include "../header/vector_class2.h"
 vector_class2::vector_class2() {
 	//std::cout << "enter" << std::endl;
-	for (size_t i = 0; i < 1024; i++) {
-		this->vector[i] = 0;
-	}
+	this->vector = new int[this->capacity];
 }
 
 vector_class2::vector_class2(uint32_t new_size) {
 
 	this->v_size = new_size;
-	for (size_t i = 0; i < new_size; i++) {
-		this->vector[i] = 0;
-	}
+	memset(this->vector, 0, sizeof(int)*this->v_size);
+	
 }
 
 void vector_class2::push_back(int element) {
+	if (this->v_size == this->capacity) {
+		int new_capacity = static_cast<int>(this->capacity * 1.5);
+		if (new_capacity <= this->capacity) { // In case of overflow or no increase
+			new_capacity = this->capacity + 1;
+		}
+
+		// Allocate new memory
+		int* new_vector = new int[new_capacity];
+
+		// Copy old data to new array
+		memcpy(new_vector, this->vector, this->v_size * sizeof(int));
+
+		// Deallocate old memory and update pointers
+		delete[] this->vector;
+		this->vector = new_vector;
+		this->capacity = new_capacity;
+	}
 	this->vector[this->v_size] = element;
 	this->v_size += 1;
 }

@@ -1,13 +1,15 @@
 #pragma once
 #ifndef VECTOR_CLASS2_H_INCLUDE
 #define VECTOR_CLASS2_H_INCLUDE
+
 #include<iostream>
 #include<algorithm>
 
 class vector_class2 {
 private:
 	uint32_t v_size = 0;
-	int vector[1024];
+	uint32_t capacity = 1024;
+	int * vector;
 	
 public:
 	vector_class2();
